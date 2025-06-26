@@ -20,3 +20,6 @@
 
 <!-- Template Stylesheet -->
 <link href={{ asset('css/main.css')}} rel="stylesheet">
+
+<!-- Website tab logo -->
+<link rel="icon" type="image/png" href={{ asset('tab-website-logo.png') }}>
