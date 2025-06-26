@@ -155,6 +155,10 @@
 
 /*** Navbar ***/
 
+.navbar {
+    background-color: var(--bs-light);
+}
+
 .navbar .span-as-title {
     color: var(--bs-primary);
     font-weight: 600;
