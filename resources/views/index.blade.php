@@ -30,14 +30,6 @@
                     <img src={{ asset('img/carousel/carousel-img-2.jpg') }}  alt="carousel-img">
                 </div>
             </div>
-            <div class="carousel-caption">
-                <h1 class="text-light">Sample text</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Fugit, praesentium. Fuga eveniet quidem ut temporibus vitae
-                unde aspernatur tenetur quam velit perferendis.
-                Ipsa minus perspiciatis fugit? Assumenda recusandae ipsam
-                delectus!</p>
-            </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon btn bg-primary" aria-hidden="false"></span>
                 <span class="visually-hidden">Previous</span>
