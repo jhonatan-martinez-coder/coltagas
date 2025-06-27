@@ -35,6 +35,9 @@
                 @endswitch
 
             @endforeach
+            @if (env('ENABLE_CONTACT_FORM', false))
+                <a href="/contact/form" class="nav-item nav-link">Contactenos</a>
+            @endif
         </div>
         <!--- <a href="" class="btn btn-primary rounded-pill py-2 px-4 ms-lg-4">Book Now</a> --->
     </div>
