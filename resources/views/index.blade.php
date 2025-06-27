@@ -24,19 +24,10 @@
         <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
-                    <img src={{ asset('img/carousel/carousel-img-1.jpeg') }} alt="carousel-img">
+                    <img src={{ asset('img/carousel/carousel-img-1.jpg') }} alt="carousel-img">
                 </div>
                 <div class="carousel-item">
-                    <img src={{ asset('img/carousel/carousel-img-1.jpeg') }}  alt="carousel-img">
-                </div>
-                <div class="carousel-item">
-                    <img src={{ asset('img/carousel/carousel-img-1.jpeg') }} alt="carousel-img">
-                </div>
-                <div class="carousel-item">
-                    <img src={{ asset('img/carousel/carousel-img-1.jpeg') }} alt="carousel-img">
-                </div>
-                <div class="carousel-item">
-                    <img src={{ asset('img/carousel/carousel-img-1.jpeg') }} alt="carousel-img">
+                    <img src={{ asset('img/carousel/carousel-img-2.jpg') }}  alt="carousel-img">
                 </div>
             </div>
             <div class="carousel-caption">
