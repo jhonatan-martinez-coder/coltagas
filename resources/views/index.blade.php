@@ -258,6 +258,31 @@
     </div>
     <!------------- End image gallery ------------>
 
+    <!------------- authorities ------------>
+    <div class="authorities container-fluid pt-3 pb-1 mt-3">
+        <div class="container-lg">
+            <div class="row  g-4">
+                <div class="col-sm-12 col-md-4">
+                    <div class="img-container text-center">
+                        <img src={{ asset('img/cardique-300x300.png') }} alt="autoridades-logo">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="img-container text-center">
+                        <img src={{ asset('img/incotec-300x300.png') }} alt="autoridades-logo">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="img-container">
+                        <img src={{ asset('img/ministerio-minas-300x300.png') }} alt="autoridades-logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------- End authorities ------------>
+
+
     <!---------- JAVASCRIPT ---------->
     @include('partials.footer')
 </body>

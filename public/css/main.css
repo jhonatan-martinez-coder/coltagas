@@ -1434,3 +1434,17 @@
     object-fit: cover;
 }
 /** End clients section **/
+
+/** authorities section **/
+.authorities .img-container {
+    max-height: 300px;
+    max-width: 300px;
+    margin: auto;
+}
+
+.authorities .img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/** End authorities section **/
