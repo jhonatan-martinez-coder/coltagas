@@ -113,6 +113,32 @@
     </div>
     <!-------- End environment --------->
 
+    <!------------ clients ------------>
+    <div class=" clients container-fluid py-5 my-5">
+        <div class="container-lg">
+            <h2 class="text-center">CONOZCA A NUESTROS CLIENTES</h2>
+            <p class="text-center">Testimonios de nuestra calidad y servicio conforme</p>
+            <div class="row g-4">
+                <div class="col-md-4 col-sm-12">
+                    <div class="img-container">
+                        <img src={{ asset('img/clients/client-1.png') }} alt="client-testimonial">
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 text-center">
+                    <div class="img-container">
+                        <img src={{ asset('img/clients/client-2.png') }} alt="client-testimonial">
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 text-center">
+                    <div class="img-container">
+                        <img src={{ asset('img/clients/client-3.png') }} alt="client-testimonial">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------ End clients ------------>
+
     <!---------- JAVASCRIPT ---------->
     @include('partials.footer')
 </body>
