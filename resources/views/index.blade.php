@@ -42,48 +42,55 @@
     </div>
     <!-- Carousel End -->
 
-    <!-------- sectin of products grouped by category --------->
-    @foreach ($listOfCategorizedProducts as $productCategory)
-    <section style="padding-top: 4rem" id={{ strtolower($productCategory['name']) }} >
-        <div class="container-fluid product pt-3 pb-1 mt-3">
-            <div class="container-lg">
-                <!------------ category section title ------------>
-                <div class="mx-auto text-center mb-3">
-                    <h3 class="section-title px-3">{{ $productCategory['name'] }}</h3>
+    <!-------- section about us  --------->
+    <div class="container-fluid pt-3 pb-1 mt-3">
+        <div class="container-lg">
+            <h2 class="text-center">NUESTRA EMPRESA</h2>
+            <p class="text-center">Acerca de Nosotros</p>
+            <div class="row g-4 mt-4">
+                <!----- img --->
+                <div class="col-md-6 col-sm-12 text-center">
+                    <img class="img-fluid w-100" src={{ asset('img/sobre-nosotros-index-section.jpg') }}
+                        alt="buquetanque-sección-sobre-nosotros">
                 </div>
-            
-                <div class="row g-4 justify-content-center">
-                    @foreach ($productCategory['products'] as $product)
-                    <!---product---->
-                    <div class="col-sm-6 col-md-6 col-lg-4">
-                        <div class="product-item">
-                            <div class="product-img">
-                                <div class="product-img-inner">
-                                    <img class="custom-product-image" src={{ asset('/storage/' . $product->thumbnail) }}
-                                            alt="Image">
-                                    <div class="product-icon">
-                                        <a href={{ url('/products/' . $product->id . '/details') }} class="my-auto"><i
-                                                    class="fas fa-link fa-2x text-white"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-content border border-top-0 rounded-bottom p-4">
-                                <a href={{ url('/products/' . $product->id . '/details') }} class="h4 mb-5"
-                                    style="width: 100%;">{{ $product->title}}</a>
-                                <a href={{ url('/products/' . $product->id . '/details') }}
-                                    class="btn btn-primary rounded-pill py-2 px-4 mt-3 text-light" style="width: 100%;">Mas
-                                    Información</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!--- End product---->
-                    @endforeach
+                <div class="col-md-6 col-sm-12">
+                    <p>
+                        Somos una empresa dinámica cuyo principal objetivo es la entera satisfacción de nuestros
+                        clientes. Somos Comercializadores de Combustibles para el sector Marítimo con una vasta
+                        experiencia de más de 15 años a través de nuestra estación de servicio marítima avalado por
+                        el
+                        ministerio de minas y energía, Lubricantes y Petroquímicos en Colombia y actuamos como
+                        Bróker en
+                        negociaciones internacionales de crudo y derivados.
+                    </p>
+                    <h5>Nuestros Mayores Objetivos Son:</h5>
+                    <ul>
+                        <li>La entera satisfacción de nuestros clientes</li>
+                        <li>Entregas oportunas</li>
+                        <li>Precios competitivos</li>
+                        <li>Producto de excelente calidad</li>
+                        <li>Asesorías técnicas</li>
+                        <li>Cantidades exactas</li>
+                    </ul>
+                    <p>
+                        Operamos en toda la zona Norte de Colombia, nuestra oficina base se encuentra en la ciudad
+                        de
+                        Cartagena de Indias con cobertura en todo el territorio Colombiano y en los principales
+                        puertos como son Cartagena, Barranquilla, Santa Marta, Coveñas, Puerto Bolívar y el puerto
+                        de
+                        Buenaventura; Como también para casos puntuales tenemos alianzas estratégicas para hacer
+                        entregas en Ciudad de Panamá, Centro América y el Caribe.
+                    </p>
+                    <p>
+                        Contamos con personal altamente calificado para atender y satisfacer las necesidades de
+                        nuestros
+                        clientes.
+                    </p>
                 </div>
             </div>
         </div>
-    </section>
-    @endforeach
-    <!-------- sectin of products grouped by category --------->
+    </div>
+    <!-------- End section about us  --------->
 
     <!---------- JAVASCRIPT ---------->
     @include('partials.footer')
