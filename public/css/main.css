@@ -966,7 +966,7 @@
 }
 
 .gallery .gallery-item:hover .gallery-content {
-    background: rgba(19, 53, 123, 0.8);
+    background: #dd002536;
 }
 
 .gallery .tab-class .nav-item {
