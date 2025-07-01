@@ -92,6 +92,27 @@
     </div>
     <!-------- End section about us  --------->
 
+    <!-------- section environment duty --------->
+    <div class="container-fluid pt-3 pb-1 my-3">
+        <div class="container-lg">
+            <h2 class="text-center">NUESTRO COMPROMISO CON EL MEDIO AMBIENTE</h2>
+            <p class="text-center mt-3">Responsables con el planeta</p>
+            <div class="row g-4">
+                <div class="col-md-6 col-sm-12">
+                    <p class="mt-5 pt-5">
+                        <i>COLTAGAS DEL CARIBE S.A.S</i> es una empresa comprometida con la conservación y cuidado
+                        del medio ambiente por lo que todos sus procesos y procedimientos son realizados con el
+                        cumplimiento de la normatividad vigente en esta área.
+                    </p>
+                </div>
+                <div class="col-md-6 col-sm-12 text-center">
+                    <img class="img-fluid w-100" src={{ asset('img/compromiso-con-el-medio-ambiente.jpg') }} alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------- End environment --------->
+
     <!---------- JAVASCRIPT ---------->
     @include('partials.footer')
 </body>
