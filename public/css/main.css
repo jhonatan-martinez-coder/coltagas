@@ -593,20 +593,9 @@
     transition: 0.5s;
 }
 
-.destination .tab-class .nav-item {
-    padding: 0 0 20px 0;
-}
-
-.destination .tab-class .nav-item a.active {
-    background: var(--bs-primary) !important;
-}
-
-.destination .tab-class .nav-item a.active span {
-    color: var(--bs-white) !important;
-}
 
 .destination .tab-class .tab-content .destination-img:hover .search-icon {
-    background: rgba(19, 53, 123, 0.4);
+    background: rgb(221, 0, 36, 0.1);
 }
 
 .destination .tab-class .tab-content .destination-img:hover .destination-overlay {
@@ -977,7 +966,7 @@
 }
 
 .gallery .gallery-item:hover .gallery-content {
-    background: rgba(19, 53, 123, 0.8);
+    background: #dd002536;
 }
 
 .gallery .tab-class .nav-item {
@@ -1431,3 +1420,31 @@
     border: 1px solid rgb(102, 102, 102);
     border-radius: 0.8rem;
 }
+
+/** clients section **/
+.clients .img-container {
+    max-height: 300px;
+    max-width: 300px;
+    margin: auto;
+}
+
+.clients .img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/** End clients section **/
+
+/** authorities section **/
+.authorities .img-container {
+    max-height: 300px;
+    max-width: 300px;
+    margin: auto;
+}
+
+.authorities .img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/** End authorities section **/

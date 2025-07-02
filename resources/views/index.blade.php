@@ -42,48 +42,246 @@
     </div>
     <!-- Carousel End -->
 
-    <!-------- sectin of products grouped by category --------->
-    @foreach ($listOfCategorizedProducts as $productCategory)
-    <section style="padding-top: 4rem" id={{ strtolower($productCategory['name']) }} >
-        <div class="container-fluid product pt-3 pb-1 mt-3">
-            <div class="container-lg">
-                <!------------ category section title ------------>
-                <div class="mx-auto text-center mb-3">
-                    <h3 class="section-title px-3">{{ $productCategory['name'] }}</h3>
+    <!-------- section about us  --------->
+    <div class="container-fluid pt-3 pb-1 mt-3">
+        <div class="container-lg">
+            <h2 class="text-center">NUESTRA EMPRESA</h2>
+            <p class="text-center">Acerca de Nosotros</p>
+            <div class="row g-4 mt-4">
+                <!----- img --->
+                <div class="col-md-6 col-sm-12 text-center">
+                    <img class="img-fluid w-100" src={{ asset('img/sobre-nosotros-index-section.jpg') }}
+                        alt="buquetanque-sección-sobre-nosotros">
                 </div>
-            
-                <div class="row g-4 justify-content-center">
-                    @foreach ($productCategory['products'] as $product)
-                    <!---product---->
-                    <div class="col-sm-6 col-md-6 col-lg-4">
-                        <div class="product-item">
-                            <div class="product-img">
-                                <div class="product-img-inner">
-                                    <img class="custom-product-image" src={{ asset('/storage/' . $product->thumbnail) }}
-                                            alt="Image">
-                                    <div class="product-icon">
-                                        <a href={{ url('/products/' . $product->id . '/details') }} class="my-auto"><i
-                                                    class="fas fa-link fa-2x text-white"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-content border border-top-0 rounded-bottom p-4">
-                                <a href={{ url('/products/' . $product->id . '/details') }} class="h4 mb-5"
-                                    style="width: 100%;">{{ $product->title}}</a>
-                                <a href={{ url('/products/' . $product->id . '/details') }}
-                                    class="btn btn-primary rounded-pill py-2 px-4 mt-3 text-light" style="width: 100%;">Mas
-                                    Información</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!--- End product---->
-                    @endforeach
+                <div class="col-md-6 col-sm-12">
+                    <p>
+                        Somos una empresa dinámica cuyo principal objetivo es la entera satisfacción de nuestros
+                        clientes. Somos Comercializadores de Combustibles para el sector Marítimo con una vasta
+                        experiencia de más de 15 años a través de nuestra estación de servicio marítima avalado por
+                        el
+                        ministerio de minas y energía, Lubricantes y Petroquímicos en Colombia y actuamos como
+                        Bróker en
+                        negociaciones internacionales de crudo y derivados.
+                    </p>
+                    <h5>Nuestros Mayores Objetivos Son:</h5>
+                    <ul>
+                        <li>La entera satisfacción de nuestros clientes</li>
+                        <li>Entregas oportunas</li>
+                        <li>Precios competitivos</li>
+                        <li>Producto de excelente calidad</li>
+                        <li>Asesorías técnicas</li>
+                        <li>Cantidades exactas</li>
+                    </ul>
+                    <p>
+                        Operamos en toda la zona Norte de Colombia, nuestra oficina base se encuentra en la ciudad
+                        de
+                        Cartagena de Indias con cobertura en todo el territorio Colombiano y en los principales
+                        puertos como son Cartagena, Barranquilla, Santa Marta, Coveñas, Puerto Bolívar y el puerto
+                        de
+                        Buenaventura; Como también para casos puntuales tenemos alianzas estratégicas para hacer
+                        entregas en Ciudad de Panamá, Centro América y el Caribe.
+                    </p>
+                    <p>
+                        Contamos con personal altamente calificado para atender y satisfacer las necesidades de
+                        nuestros
+                        clientes.
+                    </p>
                 </div>
             </div>
         </div>
-    </section>
-    @endforeach
-    <!-------- sectin of products grouped by category --------->
+    </div>
+    <!-------- End section about us  --------->
+
+    <!-------- section environment duty --------->
+    <div class="container-fluid pt-3 pb-1 my-3">
+        <div class="container-lg">
+            <h2 class="text-center">NUESTRO COMPROMISO CON EL MEDIO AMBIENTE</h2>
+            <p class="text-center mt-3">Responsables con el planeta</p>
+            <div class="row g-4">
+                <div class="col-md-6 col-sm-12">
+                    <p class="mt-5 pt-5">
+                        <i>COLTAGAS DEL CARIBE S.A.S</i> es una empresa comprometida con la conservación y cuidado
+                        del medio ambiente por lo que todos sus procesos y procedimientos son realizados con el
+                        cumplimiento de la normatividad vigente en esta área.
+                    </p>
+                </div>
+                <div class="col-md-6 col-sm-12 text-center">
+                    <img class="img-fluid w-100" src={{ asset('img/compromiso-con-el-medio-ambiente.jpg') }} alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------- End environment --------->
+
+    <!------------ clients ------------>
+    <div class=" clients container-fluid py-5 my-5">
+        <div class="container-lg">
+            <h2 class="text-center">CONOZCA A NUESTROS CLIENTES</h2>
+            <p class="text-center">Testimonios de nuestra calidad y servicio conforme</p>
+            <div class="row g-4">
+                <div class="col-md-4 col-sm-12">
+                    <div class="img-container">
+                        <img src={{ asset('img/clients/client-1.png') }} alt="client-testimonial">
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 text-center">
+                    <div class="img-container">
+                        <img src={{ asset('img/clients/client-2.png') }} alt="client-testimonial">
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 text-center">
+                    <div class="img-container">
+                        <img src={{ asset('img/clients/client-3.png') }} alt="client-testimonial">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------ End clients ------------>
+
+    <!------------- image gallery ------------>
+    <div class="container-fluid gallery py-5 my-5">
+        <div class="container-lg">
+            <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+                <h5 class="section-title px-3">Galleria</h5>
+                <h1 class="mb-4">CONOZCA ALGUNAS DE NUESTRAS ENTREGAS</h1>
+                <p class="mb-0">
+                    Evidencia de nuestro compromiso & calidad
+                </p>
+            </div>
+            <div class="tab-class text-center">
+                <div class="tab-content">
+                    <div class="tab-pane fade show p-0 active">
+                        <div class="row g-2 mb-2">
+                            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                                <div class="gallery-item h-100">
+                                    <img src={{ asset('img/entregas/Delivery-Infrastructure-Marine-DIESEL-MN-Ana-Maria-TANKER-3.png') }} class="img-fluid w-100 h-100 rounded" alt="Image">
+                                        <div class="gallery-content">
+                                            <div class="gallery-info">
+                                                <h5 class="text-white text-uppercase mb-2">Ana Maria Tanker</h5>
+                                                <p class="btn-hover text-white">Entrega de Diesel</p>
+                                            </div>
+                                        </div>
+                                        <div class="gallery-plus-icon">
+                                            <a href={{ asset('img/entregas/Delivery-Infrastructure-Marine-DIESEL-MN-Ana-Maria-TANKER-3.png') }} data-lightbox="gallery-4" class="my-auto"><i
+                                                class="fas fa-plus fa-2x text-white"></i></a>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                                <div class="gallery-item h-100">
+                                    <img src={{ asset('img/entregas/ENTREGA-DE-MGO-BARRANQUILLA-PALERMO-1.png') }} class="img-fluid w-100 h-100 rounded" alt="Image">
+                                    <div class="gallery-content">
+                                        <div class="gallery-info">
+                                            <h5 class="text-white text-uppercase mb-2">Barranquilla palermo</h5>
+                                            <p class="btn-hover text-white">Entrega de MGO</p>
+                                        </div>
+                                    </div>
+                                    <div class="gallery-plus-icon">
+                                        <a href={{ asset('img/entregas/ENTREGA-DE-MGO-BARRANQUILLA-PALERMO-1.png') }}
+                                            data-lightbox="gallery-2" class="my-auto"><i
+                                            class="fas fa-plus fa-2x text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                                <div class="gallery-item h-100">
+                                    <img src={{ asset('img/entregas/IMG-20240308-WA0016.jpg') }}
+                                        class="img-fluid w-100 h-100 rounded" alt="Image">
+                                    <div class="gallery-content">
+                                        <div class="gallery-info">
+                                            <h5 class="text-white text-uppercase mb-2">Not defined</h5>
+                                            <p class="btn-hover text-white">Not defined</p>
+                                        </div>
+                                    </div>
+                                    <div class="gallery-plus-icon">
+                                        <a href={{ asset('img/entregas/IMG-20240308-WA0016.jpg') }}
+                                            data-lightbox="gallery-5" class="my-auto"><i
+                                            class="fas fa-plus fa-2x text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                                <div class="gallery-item h-100">
+                                    <img src={{ asset('img/entregas/entrega-1.png') }}
+                                        class="img-fluid w-100 h-100 rounded" alt="Image">
+                                    <div class="gallery-content">
+                                        <div class="gallery-info">
+                                            <h5 class="text-white text-uppercase mb-2">Not defined</h5>
+                                            <p class="text-white">Not defined</p>
+                                        </div>
+                                    </div>
+                                    <div class="gallery-plus-icon">
+                                        <a href={{ asset('img/entregas/entrega-1.png') }}
+                                        data-lightbox="gallery-6" class="my-auto"><i
+                                        class="fas fa-plus fa-2x text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                                <div class="gallery-item h-100">
+                                    <img src={{ asset('img/entregas/ENTREGA-DE-LUBRICANTES-MARINOS-COTECMAR-1.jpg') }}
+                                        class="img-fluid w-100 h-100 rounded" alt="Image">
+                                    <div class="gallery-content">
+                                        <div class="gallery-info">
+                                            <h5 class="text-white text-uppercase mb-2">Cotecmar</h5>
+                                            <p class="btn-hover text-white">Entrega de Lubricantes</p>
+                                        </div>
+                                    </div>
+                                    <div class="gallery-plus-icon">
+                                        <a href={{ asset('img/entregas/ENTREGA-DE-LUBRICANTES-MARINOS-COTECMAR-1.jpg') }} data-lightbox="gallery-1" class="my-auto"><i
+                                            class="fas fa-plus fa-2x text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                                <div class="gallery-item h-100">
+                                    <img src={{ asset('img/entregas/Delivery-Infrastructure-Marine-DIESEL-MN-Ana-Maria-TANKER-1.png') }} class="img-fluid w-100 h-100 rounded" alt="Image">
+                                    <div class="gallery-content">
+                                        <div class="gallery-info">
+                                            <h5 class="text-white text-uppercase mb-2">Ana Maria Tanker</h5>
+                                            <p class="btn-hover text-white">Entrega de Diesel</p>
+                                        </div>
+                                    </div>
+                                    <div class="gallery-plus-icon">
+                                        <a href={{ asset('img/entregas/Delivery-Infrastructure-Marine-DIESEL-MN-Ana-Maria-TANKER-1.png') }} data-lightbox="gallery-3" class="my-auto"><i
+                                            class="fas fa-plus fa-2x text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-center mt-4">LAS ENTREGAS SON REALIZADAS POR CAMIONES CISTERNAS O BARCAZAS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------- End image gallery ------------>
+
+    <!------------- authorities ------------>
+    <div class="authorities container-fluid pt-3 pb-1 mt-3">
+        <div class="container-lg">
+            <div class="row  g-4">
+                <div class="col-sm-12 col-md-4">
+                    <div class="img-container text-center">
+                        <img src={{ asset('img/cardique-300x300.png') }} alt="autoridades-logo">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="img-container text-center">
+                        <img src={{ asset('img/incotec-300x300.png') }} alt="autoridades-logo">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="img-container">
+                        <img src={{ asset('img/ministerio-minas-300x300.png') }} alt="autoridades-logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------- End authorities ------------>
+
 
     <!---------- JAVASCRIPT ---------->
     @include('partials.footer')
