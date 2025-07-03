@@ -35,6 +35,10 @@
                 @endswitch
 
             @endforeach
+            <!--------- product list ---------->
+            <a href="/products/list" class="nav-item nav-link" >Productos</a>
+
+            <!--------- contact form ----------->
             @if (env('ENABLE_CONTACT_FORM', false))
                 <a href="/contact/form" class="nav-item nav-link">Contactenos</a>
             @endif
