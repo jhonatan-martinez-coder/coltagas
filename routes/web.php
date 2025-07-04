@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MainController;
+use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\EmailController;
 use App\Livewire\CreateCustomNavBarOption;
 
@@ -23,5 +24,7 @@ Route::get('/{slug}', [MainController::class, 'getPageBySlug']);
 Route::get('/products/{id}/details', [MainController::class, 'productDetails']);
 
 Route::get('/contact/form', [MainController::class, 'contactForm']);
+
+Route::get('/products/list', [ProductsController::class, 'index']);
 
 Route::post('/mail/send', [EmailController::class, 'sendClientContactEmail'] );
