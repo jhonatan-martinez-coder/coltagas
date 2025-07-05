@@ -23,3 +23,5 @@
 
 <!-- Website tab logo -->
 <link rel="icon" type="image/png" href={{ asset('tab-website-logo.png') }}>
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
