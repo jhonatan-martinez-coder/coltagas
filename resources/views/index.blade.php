@@ -143,7 +143,7 @@
     <div class="container-fluid gallery py-5 my-5">
         <div class="container-lg">
             <div class="mx-auto text-center mb-5" style="max-width: 900px;">
-                <h5 class="section-title px-3">Galleria</h5>
+                <h5 class="section-title px-3">Galeria</h5>
                 <h1 class="mb-4">CONOZCA ALGUNAS DE NUESTRAS ENTREGAS</h1>
                 <p class="mb-0">
                     Evidencia de nuestro compromiso & calidad
