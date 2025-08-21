@@ -157,6 +157,7 @@
 
 .navbar {
     background-color: var(--bs-white);
+    height: 6.5rem;
 }
 
 .navbar .span-as-title {
