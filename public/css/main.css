@@ -1368,6 +1368,7 @@
 .footer {
     background: #ffffff;
     /** before it was set to --bs-dark */
+    border-top: 1px solid #c2c2c2;
 }
 
 .footer .footer-item a {
