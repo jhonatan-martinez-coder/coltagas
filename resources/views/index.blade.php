@@ -143,7 +143,7 @@
     <div class="container-fluid gallery py-5 my-5">
         <div class="container-lg">
             <div class="mx-auto text-center mb-5" style="max-width: 900px;">
-                <h5 class="section-title px-3">Galleria</h5>
+                <h5 class="section-title px-3">Galeria</h5>
                 <h1 class="mb-4">CONOZCA ALGUNAS DE NUESTRAS ENTREGAS</h1>
                 <p class="mb-0">
                     Evidencia de nuestro compromiso & calidad
@@ -190,8 +190,7 @@
                                         class="img-fluid w-100 h-100 rounded" alt="Image">
                                     <div class="gallery-content">
                                         <div class="gallery-info">
-                                            <h5 class="text-white text-uppercase mb-2">Not defined</h5>
-                                            <p class="btn-hover text-white">Not defined</p>
+                                            <h5 class="text-white text-uppercase mb-2">Entrega en puerto</h5>
                                         </div>
                                     </div>
                                     <div class="gallery-plus-icon">
@@ -207,8 +206,7 @@
                                         class="img-fluid w-100 h-100 rounded" alt="Image">
                                     <div class="gallery-content">
                                         <div class="gallery-info">
-                                            <h5 class="text-white text-uppercase mb-2">Not defined</h5>
-                                            <p class="text-white">Not defined</p>
+                                            <h5 class="text-white text-uppercase mb-2">Despacho en fondeo</h5>
                                         </div>
                                     </div>
                                     <div class="gallery-plus-icon">
@@ -230,21 +228,6 @@
                                     </div>
                                     <div class="gallery-plus-icon">
                                         <a href={{ asset('img/entregas/ENTREGA-DE-LUBRICANTES-MARINOS-COTECMAR-1.jpg') }} data-lightbox="gallery-1" class="my-auto"><i
-                                            class="fas fa-plus fa-2x text-white"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
-                                <div class="gallery-item h-100">
-                                    <img src={{ asset('img/entregas/Delivery-Infrastructure-Marine-DIESEL-MN-Ana-Maria-TANKER-1.png') }} class="img-fluid w-100 h-100 rounded" alt="Image">
-                                    <div class="gallery-content">
-                                        <div class="gallery-info">
-                                            <h5 class="text-white text-uppercase mb-2">Ana Maria Tanker</h5>
-                                            <p class="btn-hover text-white">Entrega de Diesel</p>
-                                        </div>
-                                    </div>
-                                    <div class="gallery-plus-icon">
-                                        <a href={{ asset('img/entregas/Delivery-Infrastructure-Marine-DIESEL-MN-Ana-Maria-TANKER-1.png') }} data-lightbox="gallery-3" class="my-auto"><i
                                             class="fas fa-plus fa-2x text-white"></i></a>
                                     </div>
                                 </div>
