@@ -190,8 +190,7 @@
                                         class="img-fluid w-100 h-100 rounded" alt="Image">
                                     <div class="gallery-content">
                                         <div class="gallery-info">
-                                            <h5 class="text-white text-uppercase mb-2">Not defined</h5>
-                                            <p class="btn-hover text-white">Not defined</p>
+                                            <h5 class="text-white text-uppercase mb-2">Entrega en puerto</h5>
                                         </div>
                                     </div>
                                     <div class="gallery-plus-icon">
@@ -207,8 +206,7 @@
                                         class="img-fluid w-100 h-100 rounded" alt="Image">
                                     <div class="gallery-content">
                                         <div class="gallery-info">
-                                            <h5 class="text-white text-uppercase mb-2">Not defined</h5>
-                                            <p class="text-white">Not defined</p>
+                                            <h5 class="text-white text-uppercase mb-2">Despacho en fondeo</h5>
                                         </div>
                                     </div>
                                     <div class="gallery-plus-icon">
