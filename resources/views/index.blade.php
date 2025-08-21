@@ -234,21 +234,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
-                                <div class="gallery-item h-100">
-                                    <img src={{ asset('img/entregas/Delivery-Infrastructure-Marine-DIESEL-MN-Ana-Maria-TANKER-1.png') }} class="img-fluid w-100 h-100 rounded" alt="Image">
-                                    <div class="gallery-content">
-                                        <div class="gallery-info">
-                                            <h5 class="text-white text-uppercase mb-2">Ana Maria Tanker</h5>
-                                            <p class="btn-hover text-white">Entrega de Diesel</p>
-                                        </div>
-                                    </div>
-                                    <div class="gallery-plus-icon">
-                                        <a href={{ asset('img/entregas/Delivery-Infrastructure-Marine-DIESEL-MN-Ana-Maria-TANKER-1.png') }} data-lightbox="gallery-3" class="my-auto"><i
-                                            class="fas fa-plus fa-2x text-white"></i></a>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                         <p class="text-center mt-4">LAS ENTREGAS SON REALIZADAS POR CAMIONES CISTERNAS O BARCAZAS</p>
                     </div>
