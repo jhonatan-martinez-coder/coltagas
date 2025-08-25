@@ -301,11 +301,6 @@
         color: var(--bs-dark) !important;
     }
 
-    .navbar-light .navbar-nav .nav-link:hover,
-    .navbar-light .navbar-nav .nav-link.active {
-        color: var(--bs-white) !important;
-    }
-
     .navbar-light .navbar-brand img {
         max-height: 45px;
     }
