@@ -223,7 +223,13 @@
 .navbar-light .navbar-brand img {
     max-height: 6rem;
     transition: .5s;
-    width: 22rem;
+    width: 12rem;
+}
+
+@media (min-width: 991px){
+    .navbar-light .navbar-brand img {
+        width: 20rem;
+    }
 }
 
 .sticky-top.navbar-light .navbar-brand img {
@@ -299,11 +305,6 @@
     .sticky-top.navbar-light .navbar-nav .nav-link {
         padding: 10px 0;
         color: var(--bs-dark) !important;
-    }
-
-    .navbar-light .navbar-nav .nav-link:hover,
-    .navbar-light .navbar-nav .nav-link.active {
-        color: var(--bs-white) !important;
     }
 
     .navbar-light .navbar-brand img {
